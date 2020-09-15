@@ -24,7 +24,7 @@ pipeline {
     }
     post {
         success {
-            sh 'cp -rv /var/lib/jenkins/workspace/test-02/target/*.war /opt/tomcat/apache-tomcat-9.0.37/webapps'
+            sh 'sudo cp -rv /var/lib/jenkins/workspace/test-02/target/*.war /opt/tomcat/apache-tomcat-9.0.37/webapps'
         }
     }    
 }
