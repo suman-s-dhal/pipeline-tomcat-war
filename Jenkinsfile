@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        sshagent(['slave-jenkins'])
+    }
     tools {
         maven 'm2'
     }
