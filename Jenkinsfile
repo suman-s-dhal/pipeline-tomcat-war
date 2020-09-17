@@ -1,6 +1,4 @@
-sshagent(['slave-jenkins']) {
-    // some block
-    pipeline {
+pipeline {
     agent any
     tools {
         maven 'm2'
@@ -24,5 +22,4 @@ sshagent(['slave-jenkins']) {
            }
         }
     }
-}
 }
