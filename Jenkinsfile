@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-              echo "Deploying the Project"
+              sh ' cp -rv /root/workspace/pipeline-master/target/*.war /opt/tomcat/apache-tomcat-9.0.38/webapps'
            }
         }
     }
