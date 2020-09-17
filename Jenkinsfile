@@ -14,7 +14,6 @@ pipeline {
            steps {
               echo "Creating the Project package"
               sh 'mvn package'
-              }
            }
         }
         stage('Deploy') {
