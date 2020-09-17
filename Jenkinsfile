@@ -1,6 +1,5 @@
 pipeline {
     agent { label 'demo-slave' }
-    }
     tools {
         maven 'm4'
     }
