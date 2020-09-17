@@ -1,11 +1,8 @@
 node {
-    tools {
-        maven 'm4'
-    }
     stage('Do something with git') {
-        sshagent(credentials: ['demo-slave']) {
-            //disply the message
-            sh 'mvn clean'
-        }
+       sshagent(['0908002b-74b3-499d-b33a-a96e77de1859']) {
+          // some block
+          echo 'Hello'
+       }
     }
 }
