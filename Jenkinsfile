@@ -1,5 +1,5 @@
 
-node ['demo-slave]']
+node ['root]']
 {
     stage 'Validatio' {
         sh 'mvn validate'
